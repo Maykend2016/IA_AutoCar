@@ -3,6 +3,7 @@
 **Construindo nosso primeiro carro autônomo com Inteligência Artificial e Deep Q-Learning**
 
 Nesse projeto, tenho o intuito de simular um carro autônomo usando aprendizagem por reforço, como também demonstrar algumas técnicas de Deep Learning com a biblioteca PyTorch e a linguagem Python!
+<hr>
 
 **Requisitos:**
 
@@ -15,7 +16,6 @@ Nesse projeto, tenho o intuito de simular um carro autônomo usando aprendizagem
 **Configuração de Ambiente**
 
 No Anaconda teremos que acessar o **environments** e definir o **python** na **versão 3.6**, certifique-se o estado do ambiente no python 3.6, defina também um **nome para seu projeto**, por fim instalaremos a **IDE Spyder** na **versão 3.3.4**.
-
 
 Iremos usar o **Anaconda Prompt** para efetuarmos algumas instalações no pacote e digite:
 
@@ -37,7 +37,14 @@ No Windows:
 
 (base) C:\Users\mayke> conda install -c conda-forge kivy
 
-<br>
+<hr>
+
+**Entendo os arquivos***
+
+- **map.py** responsável pelo cérebro do ambiente/player em execução que iremos interagir com nossa **IA**.
+- **car.kv** resposável por dar vida as cores do ambiente e delimitar os sensores em 3 cores
+- **ia.py** resposável pela nossa IA Inteçigência Artificial de modo que haja uma interalçai com o Deep Q-Learning
+- **OBS: O projeto é executado pelo Play da IDE Spyder no arquivo map.py**
 
 Em nossa aplicação haverá **3 sensores** com o objetivo de sair do ponto **A** ao ponto **B** e assim vice-versa. Nossa rede neural será responsável por treinar o veículo mediante a sua aprendizagem por reforço circular pelo ambiente, faremos algumas barreiras de "areia" com o intuito de simular o desvio. Assim podendo circular pela diagonal do player.
 
